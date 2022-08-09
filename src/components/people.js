@@ -40,8 +40,8 @@ function People(props) {
                 {people.map((person, i) => {
                     return (
                         <div key={`person-${i}`}>
-                            {person.personName}
-                            {person.email}
+                            <div className="grid-item">{person.personName}</div>
+                            <div className="grid-item">{person.email}</div>
                         </div>
                     )
                 })}
